@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+Yes
+<div class="">
+<table>
+  <tr th:each="u : ${utilisateurs}" class="table">
+    <td th:text="${u.firstName}"></td>
+    <td th:text="${u.email}"></td>
+    <td th:text="${u.lastName}"></td>
+    <td th:text="${u.birthDate}"></td>
+    <td th:text="${u.city}"></td>
+    <td th:text="${u.country}"></td>
+    <td th:text="${u.avatar}"></td>
+    <td th:text="${u.company}"></td>
+    <td th:text="${u.jobPosition}"></td>
+    <td th:text="${u.mobile}"></td>
+    <td th:text="${u.username}"></td>
+    <td th:text="${u.password}"></td>
+    <td th:text="${u.role}"></td>
+  </tr>
+</table></div>
+</body>
+</html>
